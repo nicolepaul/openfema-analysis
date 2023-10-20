@@ -2,7 +2,7 @@
 
 ## Overview
 
-This [notebook](/get_openfema_data.ipynb) can be used and adapted to work with [**OpenFEMA datasets**](https://www.fema.gov/about/openfema/data-sets) related to the  Individuals and Households Program (IHP). The python functions within the repository can also be adapted to eventually support other available datasets from OpenFEMA (e.g., disaster information, public assistance).
+This [notebook](/get_openfema_data.ipynb) can be used and adapted to work with [**OpenFEMA datasets**](https://www.fema.gov/about/openfema/data-sets) related to the  Individuals and Households Program (IHP). The [python functions](/query.py) within the repository can also be adapted to eventually support other available datasets from OpenFEMA (e.g., disaster information, public assistance).
 
 ## Supported datasets
 

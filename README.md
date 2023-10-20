@@ -10,3 +10,7 @@ The following Individuals and Households Programs (IHP) datasets are currently s
 * **'HousingAssistanceOwners'**: Housing Assistance Program Data - Owners [V2](https://www.fema.gov/openfema-data-page/housing-assistance-program-data-owners-v2)
 * **'HousingAssistanceRenters'**: Housing Assistance Program Data - Renters [V2](https://www.fema.gov/openfema-data-page/housing-assistance-program-data-renters-v2)
 * **'IndividualsAndHouseholdsProgramValidRegistrations'**: Individuals and Households Program - Valid Registrations [V1](https://www.fema.gov/openfema-data-page/individuals-and-households-program-valid-registrations-v1)
+
+## Disclaimer
+
+This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).

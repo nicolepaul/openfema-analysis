@@ -12,7 +12,8 @@ def get_endpoint(name):
     Args:
         name (str): dataset name from openFEMA
     """    
-    allowed = ['HousingAssistanceOwners', 'HousingAssistanceRenters', 'IndividualsAndHouseholdsProgramValidRegistrations']
+    allowed = ['HousingAssistanceOwners', 'HousingAssistanceRenters',
+               'IndividualsAndHouseholdsProgramValidRegistrations']
     assert name in allowed, f"Could not find endpoint for {name}; only {allowed} supported"
     if name in ['HousingAssistanceOwners', 'HousingAssistanceRenters']:
         return f"https://www.fema.gov/api/open/v2/{name}"
@@ -125,7 +126,6 @@ def paginate_records(url, name, count):
         r_json = get_response(new_url)
         all_data[i] = convert_json_to_dataframe(r_json, name)
     return pd.concat(all_data, axis=0)
-
 
 
 def get_all_records(url, name, count):

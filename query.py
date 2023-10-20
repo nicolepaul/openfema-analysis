@@ -5,7 +5,6 @@ import requests
 import json
 
 
-# Get endpoint
 def get_endpoint(name):
     """Retrieve the endpoint for openFEMA dataset queries
 
@@ -21,7 +20,6 @@ def get_endpoint(name):
         return f"https://www.fema.gov/api/open/v1/{name}"
 
 
-# Build filter string
 def get_filter_str(filters):
     """Build a string to filter retrieved openFEMA dataset
 
@@ -36,7 +34,6 @@ def get_filter_str(filters):
         return prefix + body
 
 
-# Build select string
 def get_select_str(selects):
     """Build a string to reduce retrieved dataset to a limited number of fields
 
@@ -49,7 +46,6 @@ def get_select_str(selects):
         return prefix + body
 
 
-# Build url
 def get_url(name, filters={}, selects=[], filter_str=''):
     """Build url to query openFEMA datasets
 

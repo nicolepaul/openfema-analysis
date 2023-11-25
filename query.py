@@ -12,11 +12,12 @@ def get_endpoint(name):
         name (str): dataset name from openFEMA
     """    
     allowed = ['HousingAssistanceOwners', 'HousingAssistanceRenters',
-               'IndividualsAndHouseholdsProgramValidRegistrations']
+               'IndividualsAndHouseholdsProgramValidRegistrations',
+               'DisasterDeclarationsSummaries']
     assert name in allowed, f"Could not find endpoint for {name}; only {allowed} supported"
     if name in ['HousingAssistanceOwners', 'HousingAssistanceRenters']:
         return f"https://www.fema.gov/api/open/v2/{name}"
-    elif name == 'IndividualsAndHouseholdsProgramValidRegistrations':
+    elif name in ['IndividualsAndHouseholdsProgramValidRegistrations', 'DisasterDeclarationsSummaries']:
         return f"https://www.fema.gov/api/open/v1/{name}"
 
 
